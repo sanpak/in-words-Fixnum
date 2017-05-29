@@ -61,7 +61,7 @@ class Fixnum
     left = left - write * 1000
 
     if write > 0
-      thousands = in_words write
+      thousands = write.in_words
       numString = numString + thousands + ' thousand'
       if left > 0
         numString = numString + ' '
@@ -71,7 +71,7 @@ class Fixnum
     write = left / 100
     left = left - write * 100
     if write > 0
-      hundred = in_words write
+      hundred = write.in_words
       numString = numString + hundred + ' hundred'
       if left > 0
         numString = numString + ' '
