@@ -50,7 +50,7 @@ class Fixnum
     left = left - write * 1000000
 
     if write > 0
-      millions = in_words write
+      millions = write.in_words
       numString = numString + millions + ' million'
       if left > 0
         numString = numString + ' '
